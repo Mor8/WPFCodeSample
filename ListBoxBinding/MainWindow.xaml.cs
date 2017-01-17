@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace ListBoxBinding
 {
@@ -23,6 +24,14 @@ namespace ListBoxBinding
         public MainWindow()
         {
             InitializeComponent();
+
+            var setting = new ObservableCollection<Setting>()
+            {
+                new Setting {Name = "A_Setting", IsOK=true, EncodingEnum = EncodingEnum.Ascii},
+                new Setting {Name = "B_Setting", IsOK=false, EncodingEnum = EncodingEnum.ShiftJis }
+            };
+
+            DataContext = setting;
         }
     }
 }
