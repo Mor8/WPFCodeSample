@@ -1,0 +1,29 @@
+﻿<Window x:Class="DataGridSample03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGridSample03"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <ObjectDataProvider x:Key="GenderEnumKey" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type Type="local:Gender"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    
+    <Grid>
+        <DataGrid Name="dataGrid" AutoGenerateColumns="False" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="名前" Binding="{Binding Name}" />
+                <DataGridCheckBoxColumn Header="認証済み" Binding="{Binding AuthMember}" />
+                <DataGridComboBoxColumn Header="性別" SelectedItemBinding="{Binding Gender}" ItemsSource="{Binding Source={StaticResource GenderEnumKey}}">
+                </DataGridComboBoxColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
