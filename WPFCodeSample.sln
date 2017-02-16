@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridSample03", "DataGri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxBinding", "ListBoxBinding\ListBoxBinding.csproj", "{2BC01174-2F7D-4F78-98D2-FC19844D5FF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridCheckBoxColumnEventSample", "DataGridCheckBoxColumnEventSample\DataGridCheckBoxColumnEventSample.csproj", "{12E71102-A8A1-4FD6-920D-60A79FB784A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPartyLicence", "ThirdPartyLicence\ThirdPartyLicence.csproj", "{7699A387-1906-4E37-AC17-F75295605D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2BC01174-2F7D-4F78-98D2-FC19844D5FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BC01174-2F7D-4F78-98D2-FC19844D5FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BC01174-2F7D-4F78-98D2-FC19844D5FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E71102-A8A1-4FD6-920D-60A79FB784A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E71102-A8A1-4FD6-920D-60A79FB784A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E71102-A8A1-4FD6-920D-60A79FB784A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E71102-A8A1-4FD6-920D-60A79FB784A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7699A387-1906-4E37-AC17-F75295605D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7699A387-1906-4E37-AC17-F75295605D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7699A387-1906-4E37-AC17-F75295605D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7699A387-1906-4E37-AC17-F75295605D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
